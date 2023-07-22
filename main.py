@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 def draw(text):
     image = Image.open(r'img/image.png')
-    font = ImageFont.truetype("arial.ttf", 45)
+    font = ImageFont.truetype("impact.ttf", 45)
     drawer = ImageDraw.Draw(image)
     drawer.text((100, 100),text , font=font, fill='black')
     image.save(r'img/new_image.png')
